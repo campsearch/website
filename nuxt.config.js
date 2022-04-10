@@ -39,8 +39,12 @@ export default {
     modules: [
         // https://go.nuxtjs.dev/axios
         '@nuxtjs/axios',
+
         // https://go.nuxtjs.dev/pwa
         '@nuxtjs/pwa',
+
+        '@/modules/sitemapGenerator',
+
         '@nuxtjs/sitemap'
     ],
 
@@ -83,7 +87,13 @@ export default {
     },
 
     sitemap: {
-        hostname: 'https://camp.hsuan.app'
+        hostname: 'https://camp.hsuan.app',
+        gzip: true,
+        defaults: {
+            changefreq: 'daily',
+            priority: 1,
+            lastmod: new Date()
+        }
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
