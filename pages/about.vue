@@ -3,27 +3,26 @@
     <v-row justify="center" align="center">
       <v-col cols="12" sm="8" md="6">
         <v-card class="logo py-4 d-flex justify-center">
-          <NuxtLogo/>
-          <VuetifyLogo/>
+          <HsuanLogo/>
         </v-card>
         <v-card>
           <v-card-title class="headline">
-            Welcome to the Vuetify + Nuxt.js template
+            歡迎使用營隊查詢系統
           </v-card-title>
           <v-card-text>
-            <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower
-              developers to create amazing applications.</p>
             <p>
-              For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
+              你可以查看 <a
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
+              class="text-decoration-line-through"
             >
-              documentation
-            </a>.
+              文檔
+            </a>來知道怎麼使用
             </p>
+            <!--
             <p>
-              If you have questions, please join the official <a
+              推薦你立即加入 <a
               href="https://chat.vuetifyjs.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -62,21 +61,22 @@
               rel="noopener noreferrer"
             >
               Nuxt GitHub
-            </a>
+            </a>-->
           </v-card-text>
           <v-card-actions>
             <v-spacer/>
             <v-btn
               color="primary"
               nuxt
-              to="/inspire"
+              to="/"
             >
-              Continue
+              開始使用
             </v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
     </v-row>
+    <!--
     <v-row>
       <v-col class="text-center">
         <img
@@ -93,12 +93,14 @@
           </footer>
         </blockquote>
       </v-col>
-    </v-row>
+    </v-row>-->
   </v-container>
 </template>
 
 <script>
+import HsuanLogo from "../components/HsuanLogo";
 export default {
-  name: 'InspirePage'
+  name: 'AboutPage',
+  components: {HsuanLogo}
 }
 </script>
