@@ -34,7 +34,7 @@
                     </v-list-item-icon>
                     <v-list-item-content>
                         <v-list-item-title>
-                            {{ camp.school }}
+                            {{ this.camp.school }}
                         </v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
@@ -44,7 +44,7 @@
                     </v-list-item-icon>
                     <v-list-item-content>
                         <v-list-item-title>
-                            新台幣 <span class="font-weight-bold"> {{ camp.price }} </span>元
+                            新台幣 <span class="font-weight-bold"> {{ this.camp.price }} </span>元
                         </v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
@@ -54,12 +54,12 @@
                     </v-list-item-icon>
                     <v-list-item-content>
                         <v-list-item-title>
-                            {{ camp.location }}
+                            {{ this.camp.location }}
                         </v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
                 <v-list-item>
-                    {{ camp.comment }}
+                    {{ this.camp.comment }}
                 </v-list-item>
             </v-list-item-group>
         </v-list>
@@ -94,8 +94,18 @@ export default {
                 {
                     hid: 'description',
                     name: 'description',
-                    content: '要價' + this.price + '的' + this.name + '營隊好嗎? 實際參與學生心得分享及家長評價 ' + this.comment
-                }
+                    content: '要價' + this.camp.price + '元的' + this.name + '營隊好嗎? 實際參與學生心得分享及家長評價 ' + this.camp.comment
+                },
+                {
+                    hid: 'og:title',
+                    name: 'og:title',
+                    content: this.name + ' 營隊評價、營隊內容'
+                },
+                {
+                    hid: 'og:description',
+                    name: 'og:description',
+                    content: '要價' + this.camp.price + '元的' + this.name + '營隊好嗎? 實際參與學生心得分享及家長評價 ' + this.camp.comment
+                },
             ]
         }
     },

@@ -11,9 +11,16 @@ export default {
         title: '暑假營隊搜尋系統',
         meta: [
             {charset: 'utf-8'},
+
             {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-            {hid: 'description', name: 'description', content: ''},
-            {name: 'format-detection', content: 'telephone=no'}
+            {name: 'format-detection', content: 'telephone=no'},
+
+            {hid: 'description', name: 'description', content: '快速搜尋、了解營隊價格、評價的系統'},
+            {hid: 'og:title', name: 'og:title', content: '暑假營隊搜尋系統'},
+            {hid: 'og:description', name: 'og:description', content: '快速搜尋、了解營隊價格、評價的系統'},
+            {hid: 'og:site_name', name: 'og:site_name', content: '營隊搜尋系統'},
+            {hid: 'og:locale', name: 'og:locale', content: 'zh_TW'},
+            {hid: 'apple-mobile-web-app-title', name: 'apple-mobile-web-app-title', content: '營隊搜尋'}
         ],
         link: [
             {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
