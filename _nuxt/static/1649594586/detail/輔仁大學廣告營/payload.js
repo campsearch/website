@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/detail/%E8%BC%94%E4%BB%81%E5%A4%A7%E5%AD%B8%E5%BB%A3%E5%91%8A%E7%87%9F", (function(a,b){return {data:[{name:a,camp:{name:a,school:"輔仁大學廣告傳播學系",location:"輔大",apply:b,start:"2022\u002F1\u002F24",end:"2022\u002F1\u002F27",price:5000,comment:b,website:"https:\u002F\u002Fwww.facebook.com\u002F2020fjuadcamp",tags:["一類"]}}],fetch:{},mutations:void 0}}("輔仁大學廣告營","")));

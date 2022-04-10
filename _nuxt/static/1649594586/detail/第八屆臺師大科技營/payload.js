@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/detail/%E7%AC%AC%E5%85%AB%E5%B1%86%E8%87%BA%E5%B8%AB%E5%A4%A7%E7%A7%91%E6%8A%80%E7%87%9F", (function(a,b){return {data:[{name:b,camp:{name:b,school:"國立臺灣師範大學科技應用與人力資源發展學系",location:"臺師大",apply:a,start:a,end:a,price:2021,comment:a,website:"https:\u002F\u002Fwww.facebook.com\u002F2020TAHRDcamp\u002F",tags:["二類"]}}],fetch:{},mutations:void 0}}("","第八屆臺師大科技營")));
