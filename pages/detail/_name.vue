@@ -17,7 +17,7 @@
             disabled=""
             length="5"
             size="32"
-            value="3"
+            :value="3"
         ></v-rating>
         <v-chip v-for="tag in camp.tags" :key="tag">
             {{ tag }}
