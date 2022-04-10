@@ -63,6 +63,13 @@
                 </v-list-item>
             </v-list-item-group>
         </v-list>
+        <script src="https://utteranc.es/client.js"
+                repo="hsuan1117/CampSearchNuxt"
+                issue-term="title"
+                theme="github-light"
+                crossorigin="anonymous"
+                async>
+        </script>
     </v-container>
 </template>
 
@@ -109,6 +116,42 @@ export default {
             ]
         }
     },
+
+    jsonld() {
+        return null
+        return {
+            '@context': 'https://schema.org',
+            '@type': 'Review',
+            "itemReviewed": {
+                "@type": "Event",
+                "name": this.name,
+                "location": this.camp.location,
+                "organizer": this.camp.school,
+                "startDate": new Date(this.camp.start).toISOString(),
+                "endDate": new Date(this.camp.end).toISOString(),
+                "offers":{
+                    "@type": "Offer",
+                    "price": String(this.camp.price),
+                    "priceCurrency": "TWD",
+                }
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4"
+            },
+            "name": "A good seafood place.",
+            "author": {
+                "@type": "Person",
+                "name": "Bob Smith"
+            },
+            "reviewBody": "The seafood is great.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Washington Times"
+            }
+        };
+    },
+
     computed: {
         breadcrumbs() {
             return [
