@@ -59,6 +59,7 @@
               <a :href="item.website" target="_blank" rel="nofollow" class="text-decoration-none">
                 <v-icon>mdi-open-in-new</v-icon>
               </a>
+              <router-link :to="`/detail/${item.name}`" class="text-decoration-none"><v-icon>mdi-eye</v-icon></router-link>
             </template>
           </v-data-table>
         </v-card>

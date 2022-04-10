@@ -64,6 +64,11 @@ export default {
           icon: 'mdi-chart-bubble',
           title: '關於',
           to: '/about'
+        },
+        {
+          icon: 'mdi-eye',
+          title: '營隊資訊',
+          to: '/detail/list'
         }
       ],
       miniVariant: false,
