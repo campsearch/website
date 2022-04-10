@@ -1,8 +1,24 @@
 <template>
     <v-container>
+
+        <v-breadcrumbs :items="breadcrumbs">
+            <template v-slot:divider>
+                <v-icon>mdi-chevron-right</v-icon>
+            </template>
+        </v-breadcrumbs>
+
         <h1>
             {{ this.name }}
         </h1>
+        <v-rating
+            empty-icon="mdi-star-outline"
+            full-icon="mdi-star"
+            half-icon="mdi-star-half-full"
+            disabled=""
+            length="5"
+            size="32"
+            value="3"
+        ></v-rating>
         <v-chip v-for="tag in camp.tags" :key="tag">
             {{ tag }}
         </v-chip>
@@ -78,7 +94,23 @@ export default {
                 {
                     hid: 'description',
                     name: 'description',
-                    content: this.name + '營隊好嗎? 實際參與學生心得分享及家長評價'
+                    content: '要價' + this.price + '的' + this.name + '營隊好嗎? 實際參與學生心得分享及家長評價 ' + this.comment
+                }
+            ]
+        }
+    },
+    computed: {
+        breadcrumbs() {
+            return [
+                {
+                    text: '營隊資訊',
+                    disabled: false,
+                    href: 'list',
+                },
+                {
+                    text: this.name,
+                    disabled: true,
+                    href: 'detail/' + this.name,
                 }
             ]
         }
