@@ -63,7 +63,7 @@
                 </v-list-item>
             </v-list-item-group>
         </v-list>
-        <script src="https://utteranc.es/client.js"
+        <script src="https://camp-rating.hsuan.app/client.js"
                 repo="hsuan1117/CampSearchNuxt"
                 issue-term="title"
                 theme="github-light"
