@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/detail/%E9%A6%AC%E5%81%95%E9%86%AB%E5%AD%B8%E9%99%A2%E9%86%AB%E5%AD%B8%E7%87%9F", (function(a,b){return {data:[{name:a,camp:{name:a,school:"馬偕醫學院 醫學\u002F護理學\u002F聽語學系",location:"馬偕醫學院",apply:"2022\u002F04\u002F30",start:"2022\u002F7\u002F13",end:"2022\u002F7\u002F18",price:9400,comment:b,website:b,tags:["三類"]}}],fetch:{},mutations:void 0}}("馬偕醫學院醫學營","")));

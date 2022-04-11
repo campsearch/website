@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/detail/%E9%99%BD%E6%98%8E%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%B8%E9%9B%BB%E6%A9%9F%E7%87%9F", (function(a,b){return {data:[{name:b,camp:{name:b,school:"陽明交通大學 電機系",location:"交大",apply:"2022\u002F5\u002F6",start:a,end:a,price:8200,comment:a,website:"https:\u002F\u002Fm.facebook.com\u002Fnctuececamp\u002F",tags:["二類"]}}],fetch:{},mutations:void 0}}("","陽明交通大學電機營")));

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/detail/%E8%BC%94%E4%BB%81%E5%A4%A7%E5%AD%B8%E4%BC%81%E7%AE%A1%E7%A0%94%E7%BF%92%E7%87%9F", (function(a,b){return {data:[{name:b,camp:{name:b,school:"輔大企管系",location:"輔大",apply:a,start:a,end:a,price:6800,comment:a,website:"https:\u002F\u002Fwww.instagram.com\u002F21stfjubacamp\u002F",tags:["一類"]}}],fetch:{},mutations:void 0}}("","輔仁大學企管研習營")));

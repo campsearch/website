@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/detail/2022%E8%BC%94%E5%B0%8E%E7%87%9F", (function(a,b){return {data:[{name:a,camp:{name:a,school:"國立彰化師範大學",location:"彰化縣",apply:b,start:b,end:"2022\u002F08\u002F01",price:4500,comment:"即日起至5\u002F9（一）23:59。＊低收另有優惠(須附證明)",website:"https:\u002F\u002Fwww.facebook.com\u002FncueGUcamp\u002F",tags:[]}}],fetch:{},mutations:void 0}}("2022輔導營","2022\u002F07\u002F28")));
