@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/detail/2022%E9%AB%98%E5%A4%A7%E9%81%8B%E4%BC%91%E7%87%9F", (function(a,b){return {data:[{name:b,camp:{name:b,school:a,location:"高雄大學",apply:a,start:a,end:a,price:4800,comment:a,website:"https:\u002F\u002Fwww.facebook.com\u002F%E9%AB%98%E5%A4%A7%E9%81%8B%E4%BC%91%E7%87%9F-100455779117202\u002F",tags:["三類"]}}],fetch:{},mutations:void 0}}("","2022高大運休營")));

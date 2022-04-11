@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{537:function(n,e,t){"use strict";t.r(e);var r={name:"list"},c=t(93),o=t(129),l=t.n(o),w=t(415),component=Object(c.a)(r,(function(){var n=this,e=n.$createElement;return(n._self._c||e)("v-container",[n._v("\n    營隊列表\n")])}),[],!1,null,"720b6eed",null);e.default=component.exports;l()(component,{VContainer:w.a})}}]);

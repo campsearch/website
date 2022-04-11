@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/detail/%E8%87%BA%E7%81%A3%E5%A4%A7%E5%AD%B8%E5%9C%8B%E9%9A%9B%E8%8B%B1%E8%AA%9E%E6%BC%94%E8%AC%9B%E7%87%9F", (function(a,b){return {data:[{name:b,camp:{name:b,school:"臺灣大學 國際英語演講社",location:"國立臺灣大學校本部",apply:a,start:a,end:a,price:6000,comment:a,website:a,tags:["一類"]}}],fetch:{},mutations:void 0}}("","臺灣大學國際英語演講營")));

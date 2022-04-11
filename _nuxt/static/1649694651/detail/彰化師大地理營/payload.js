@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/detail/%E5%BD%B0%E5%8C%96%E5%B8%AB%E5%A4%A7%E5%9C%B0%E7%90%86%E7%87%9F", (function(a,b){return {data:[{name:b,camp:{name:b,school:"彰化師範大學地理系",location:"彰師大、臺灣中部",apply:"2022\u002F12\u002F31",start:a,end:a,price:5100,comment:a,website:"https:\u002F\u002Fwww.facebook.com\u002Fncuegeocamp21th",tags:["一類"]}}],fetch:{},mutations:void 0}}("","彰化師大地理營")));

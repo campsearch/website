@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/detail/%E6%96%87%E8%97%BB%E6%96%9C%E6%A7%93%E9%9D%92%E5%B9%B4%E9%AB%94%E9%A9%97%E7%87%9F", (function(a,b){return {data:[{name:b,camp:{name:b,school:"文藻外語大學 新媒體暨管理學院",location:"文藻外語大學",apply:a,start:a,end:a,price:0,comment:a,website:"https:\u002F\u002Fc020.wzu.edu.tw\u002F",tags:["未分類"]}}],fetch:{},mutations:void 0}}("","文藻斜槓青年體驗營")));
