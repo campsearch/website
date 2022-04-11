@@ -206,7 +206,6 @@ import originData from '../../assets/camp_data/111summer.json'
 import axios from 'axios'
 
 import copy from 'copy-to-clipboard';
-
 export default {
     data() {
         return {
@@ -243,7 +242,7 @@ export default {
         const issueRes = await axios.get(`https://api.github.com/search/issues?q=${encodeURIComponent(name + ' is:issue is:open repo:campsearch/website label:rating')}`);
         let issue = issueRes.data
         //console.log(issue)
-        let ratings;
+        let ratings = [];
 
         if (issue.items.length === 0) {
             const createIssueRes = await axios.post(`https://api.github.com/repos/campsearch/website/issues`, JSON.stringify({
@@ -255,24 +254,24 @@ export default {
             }), {
                 headers: {
                     Authorization: 'Bearer ' + process.env.GITHUB_ACCESS_TOKEN
-                }
+                },
+                timeout: 20000,
             });
             //console.log(createIssueRes.data)
         } else {
             issue = issue.items[0]
             const ratingsRes = await axios.get(issue.comments_url);
             ratings = ratingsRes.data;
-            //console.log(ratings)
-        }
-        ratings = ratings.filter(r => {
-            try {
-                JSON.parse(r.body)
-            } catch (e) {
-                return false
-            }
-            return true
-        })
 
+            ratings = ratings.filter(r => {
+                try {
+                    JSON.parse(r.body)
+                } catch (e) {
+                    return false
+                }
+                return true
+            })
+        }
         return {name, camp, ratings, issue}
     },
     head() {

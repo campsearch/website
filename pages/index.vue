@@ -75,10 +75,13 @@ import originData from '../assets/camp_data/111summer.json'
 
 export default {
     name: 'IndexPage',
+    async asyncData({params}) {
+        originData = originData.sort(()=>Math.random()-0.5)
+        return {originData}
+    },
     data() {
         return {
             expanded: [],
-            originData,
             search: '',
             tags: [],
             categories: [...new Set(originData.flatMap(r => r.tags))],
