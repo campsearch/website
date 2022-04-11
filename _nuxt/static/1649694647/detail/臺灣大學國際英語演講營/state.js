@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1649694647",layout:"default",error:a,serverRendered:true,routePath:"\u002Fdetail\u002F%E8%87%BA%E7%81%A3%E5%A4%A7%E5%AD%B8%E5%9C%8B%E9%9A%9B%E8%8B%B1%E8%AA%9E%E6%BC%94%E8%AC%9B%E7%87%9F",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a}}}}(null));
