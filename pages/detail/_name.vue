@@ -24,7 +24,8 @@
             size="32"
             class="d-inline-block"
             :value="this.ratings.reduce((o,r)=>o+JSON.parse(r.body).rating, 0) / this.ratings.length"
-        ></v-rating>({{this.ratings.length}})
+        ></v-rating>
+        ({{ this.ratings.length }})
         <v-list disabled>
             <v-subheader>營隊資訊</v-subheader>
             <v-list-item-group
@@ -263,7 +264,7 @@ export default {
             ratings = ratingsRes.data;
             //console.log(ratings)
         }
-        ratings = ratings.filter(r=>{
+        ratings = ratings.filter(r => {
             try {
                 JSON.parse(r.body)
             } catch (e) {
@@ -298,36 +299,35 @@ export default {
     },
 
     jsonld() {
-        return null
         return {
             '@context': 'https://schema.org',
-            '@type': 'Review',
-            "itemReviewed": {
-                "@type": "Event",
-                "name": this.name,
-                "location": this.camp.location,
-                "organizer": this.camp.school,
-                "startDate": new Date(this.camp.start).toISOString(),
-                "endDate": new Date(this.camp.end).toISOString(),
-                "offers": {
-                    "@type": "Offer",
-                    "price": String(this.camp.price),
-                    "priceCurrency": "TWD",
-                }
+            "@type": "Event",
+            "name": this.name,
+            "location": this.camp.location,
+            "organizer": this.camp.school,
+            "startDate": new Date(this.camp.start).toISOString(),
+            "endDate": new Date(this.camp.end).toISOString(),
+            "offers": {
+                "@type": "Offer",
+                "price": String(this.camp.price),
+                "priceCurrency": "TWD",
             },
-            "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "4"
-            },
-            "name": "A good seafood place.",
-            "author": {
-                "@type": "Person",
-                "name": "Bob Smith"
-            },
-            "reviewBody": "The seafood is great.",
-            "publisher": {
-                "@type": "Organization",
-                "name": "Washington Times"
+            "review": this.ratings.map(rating => ({
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": JSON.parse(rating.body).rating
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": rating.user.login
+                },
+                "reviewBody": JSON.parse(rating.body).comment
+            })),
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": this.ratings.reduce((o,r)=>o+JSON.parse(r.body).rating, 0) / this.ratings.length,
+                "ratingCount": this.ratings.length
             }
         };
     },
