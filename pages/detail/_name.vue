@@ -206,6 +206,8 @@ import originData from '../../assets/camp_data/111summer.json'
 import axios from 'axios'
 
 import copy from 'copy-to-clipboard';
+import cacheAdapterEnhancer from '@fengsi/nuxt-axios-cache/dist/cacheAdapterEnhancer'
+
 export default {
     data() {
         return {
@@ -224,7 +226,7 @@ export default {
             window.open(this.issue.html_url + '#new_comment_field')
         }
     },
-    async asyncData({params}) {
+    async asyncData({params }) {
         const name = params.name
         const camp = originData.filter(x => x.name === name)[0] ?? {
             name: '查無資料',
@@ -239,13 +241,27 @@ export default {
             tags: []
         }
 
-        const issueRes = await axios.get(`https://api.github.com/search/issues?q=${encodeURIComponent(name + ' is:issue is:open repo:campsearch/website label:rating')}`);
-        let issue = issueRes.data
-        //console.log(issue)
+        let issue;
+        let issueRes;
+        let issuePage = 1;
+        while(issueRes?.data?.length !== 0){
+            issueRes = await axios.get(`https://api.github.com/repos/campsearch/website/issues?per_page=100&labels=rating&page=${issuePage}`,{
+                headers:{
+                    Authorization: 'Bearer ' + process.env.GITHUB_ACCESS_TOKEN
+                }
+            })
+            issueRes.data.forEach(is=>{
+                if(is.title === name){
+                    issue = is;
+                }
+            })
+            //console.log(issueRes.data)
+            issuePage++;
+        }
         let ratings = [];
 
-        if (issue.items.length === 0) {
-            const createIssueRes = await axios.post(`https://api.github.com/repos/campsearch/website/issues`, JSON.stringify({
+        if (issue === undefined) {
+            /*const createIssueRes = await axios.post(`https://api.github.com/repos/campsearch/website/issues`, JSON.stringify({
                 title: name,
                 labels: [
                     'rating'
@@ -256,12 +272,14 @@ export default {
                     Authorization: 'Bearer ' + process.env.GITHUB_ACCESS_TOKEN
                 },
                 timeout: 20000,
-            });
+            });*/
+            console.warn(name)
             //console.log(createIssueRes.data)
         } else {
-            issue = issue.items[0]
+            //issue = issue.items[0]
             const ratingsRes = await axios.get(issue.comments_url);
             ratings = ratingsRes.data;
+            //console.log(ratings)
 
             ratings = ratings.filter(r => {
                 try {
