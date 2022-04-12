@@ -244,7 +244,7 @@
     "apply": "2022/06/12",
     "start": "2022/7/4",
     "end": "2022/7/6",
-    "price": 3,
+    "price": 3600,
     "comment": "",
     "website": "https://www.facebook.com/2022fgupsycamp/?ref=page_internal",
     "tags": [
@@ -370,25 +370,11 @@
     "apply": "2022/5/30",
     "start": "2022/7/1",
     "end": "2022/7/3",
-    "price": 4,
+    "price": 4750,
     "comment": "",
     "website": "https://www.facebook.com/AIEFTaipei",
     "tags": [
       "未分類"
-    ]
-  },
-  {
-    "name": "成功大學國家領導研習營",
-    "school": "成功大學 政治學系",
-    "location": "成大",
-    "apply": "",
-    "start": "2022/01/24",
-    "end": "2022/01/28",
-    "price": 2021,
-    "comment": "",
-    "website": "https://www.facebook.com/ncku.ps.csl/",
-    "tags": [
-      "一類"
     ]
   },
   {
@@ -476,20 +462,6 @@
     ]
   },
   {
-    "name": "臺北醫學大學2022寒假醫學營（楓杏醫學營）",
-    "school": "臺北醫學大學進修推廣處",
-    "location": "臺北醫學大學",
-    "apply": "",
-    "start": "",
-    "end": "",
-    "price": 2022,
-    "comment": "",
-    "website": "http://tmucamp.tmu.edu.tw/",
-    "tags": [
-      "三類"
-    ]
-  },
-  {
     "name": "2022臺大傳醫華佗營《華格佗茲》",
     "school": "國立臺灣大學傳統醫學研究社，(1/28與衛生福利部國家中醫藥研究所標本館合辦)",
     "location": "臺大",
@@ -515,34 +487,6 @@
     "website": "https://www.facebook.com/AIEFTaipei",
     "tags": [
       "未分類"
-    ]
-  },
-  {
-    "name": "世新大學2022第七屆公關營《PlayeRs脫罪玩家》",
-    "school": "世新大學 公共關係暨廣告學系",
-    "location": "世新大學",
-    "apply": "",
-    "start": "2022/1/24",
-    "end": "2022/1/27",
-    "price": 4,
-    "comment": "",
-    "website": "https://www.facebook.com/shuPR2022/",
-    "tags": [
-      "一類"
-    ]
-  },
-  {
-    "name": "2022放伴社會議題營｜設計一個友善移工的臺灣社會",
-    "school": "社團法人臺灣放伴教育協會",
-    "location": "大可居青年旅館 Duckstay Hostel",
-    "apply": "",
-    "start": "",
-    "end": "",
-    "price": 4,
-    "comment": "",
-    "website": "https://www.facebook.com/pangphuann",
-    "tags": [
-      "一類"
     ]
   },
   {
@@ -636,7 +580,7 @@
     "apply": "2022/05/31",
     "start": "2022/7/7",
     "end": "2022/7/16",
-    "price": 4,
+    "price": 4000,
     "comment": "",
     "website": "https://www.facebook.com/tnuasummerschool/?ref=pages_you_manage",
     "tags": [
@@ -966,20 +910,6 @@
     ]
   },
   {
-    "name": "雲科大創意生活設計營∥盜創奇航",
-    "school": "國立雲林科技大學創意生活設計系",
-    "location": "國立雲林科技大學",
-    "apply": "",
-    "start": "2022/01/25",
-    "end": "2022/01/28",
-    "price": 4,
-    "comment": "",
-    "website": "https://www.facebook.com/13thCDcamp/",
-    "tags": [
-      "二類"
-    ]
-  },
-  {
     "name": "東海大學企管營",
     "school": "東海大學 企管系",
     "location": "東海大學第二教學區管理學院",
@@ -1131,20 +1061,6 @@
     "website": "https://www.facebook.com/409880712416440/photos/a.433539396717238/6391396160931502/",
     "tags": [
       "三類"
-    ]
-  },
-  {
-    "name": "第八屆臺師大科技營",
-    "school": "國立臺灣師範大學科技應用與人力資源發展學系",
-    "location": "臺師大",
-    "apply": "",
-    "start": "",
-    "end": "",
-    "price": 2021,
-    "comment": "",
-    "website": "https://www.facebook.com/2020TAHRDcamp/",
-    "tags": [
-      "二類"
     ]
   },
   {
