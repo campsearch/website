@@ -1,6 +1,6 @@
 name: cd
 
-on: [push, issues]
+on: [push]
 
 jobs:
   cd:
