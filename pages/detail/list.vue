@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        營隊列表
+        營隊清單
         <ul>
             <li v-for="camp in originData" :key="camp.name">{{ camp.name }}
                 <v-btn @click='checkIssue(camp.name)'>Check</v-btn>
