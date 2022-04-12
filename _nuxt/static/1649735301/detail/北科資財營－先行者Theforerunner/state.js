@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1649735301",layout:"default",error:a,serverRendered:true,routePath:"\u002Fdetail\u002F%E5%8C%97%E7%A7%91%E8%B3%87%E8%B2%A1%E7%87%9F%EF%BC%8D%E5%85%88%E8%A1%8C%E8%80%85Theforerunner",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a}}}}(null));
