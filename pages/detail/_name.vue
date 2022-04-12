@@ -226,7 +226,7 @@ export default {
             window.open(this.issue.html_url + '#new_comment_field')
         }
     },
-    async asyncData({params }) {
+    async asyncData({params}) {
         const name = params.name
         const camp = originData.filter(x => x.name === name)[0] ?? {
             name: '查無資料',
@@ -244,14 +244,14 @@ export default {
         let issue;
         let issueRes;
         let issuePage = 1;
-        while(issueRes?.data?.length !== 0){
-            issueRes = await axios.get(`https://api.github.com/repos/campsearch/website/issues?per_page=100&labels=rating&page=${issuePage}`,{
-                headers:{
+        while (issueRes?.data?.length !== 0) {
+            issueRes = await axios.get(`https://api.github.com/repos/campsearch/website/issues?per_page=100&labels=rating&page=${issuePage}`, {
+                headers: {
                     Authorization: 'Bearer ' + process.env.GITHUB_ACCESS_TOKEN
                 }
             })
-            issueRes.data.forEach(is=>{
-                if(is.title === name){
+            issueRes.data.forEach(is => {
+                if (is.title === name) {
                     issue = is;
                 }
             })
@@ -322,8 +322,8 @@ export default {
             "name": this.name,
             "location": this.camp.location,
             "organizer": this.camp.school,
-            "startDate": new Date(this.camp.start).toISOString(),
-            "endDate": new Date(this.camp.end).toISOString(),
+            "startDate": this.camp.start,//new Date(this.camp.start).toISOString(),
+            "endDate": this.camp.end, //new Date(this.camp.end).toISOString(),
             "offers": {
                 "@type": "Offer",
                 "price": String(this.camp.price),
@@ -343,7 +343,7 @@ export default {
             })),
             "aggregateRating": {
                 "@type": "AggregateRating",
-                "ratingValue": this.ratings.reduce((o,r)=>o+JSON.parse(r.body).rating, 0) / this.ratings.length,
+                "ratingValue": this.ratings.reduce((o, r) => o + JSON.parse(r.body).rating, 0) / this.ratings.length,
                 "ratingCount": this.ratings.length
             }
         };
