@@ -245,10 +245,12 @@ export default {
         let issueRes;
         let issuePage = 1;
         while (issueRes?.data?.length !== 0) {
+            let headers = {};
+            if(process.env.GITHUB_ACCESS_TOKEN){
+                headers['Authorization'] = 'Bearer ' + process.env.GITHUB_ACCESS_TOKEN
+            }
             issueRes = await axios.get(`https://api.github.com/repos/campsearch/website/issues?per_page=100&labels=rating&page=${issuePage}`, {
-                headers: {
-                    Authorization: 'Bearer ' + process.env.GITHUB_ACCESS_TOKEN
-                }
+                headers
             })
             issueRes.data.forEach(is => {
                 if (is.title === name) {
