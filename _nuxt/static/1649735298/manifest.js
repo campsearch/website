@@ -1,0 +1,1 @@
+__NUXT_JSONP__("manifest.js", {routes:["\u002F","\u002Fabout","\u002Fdetail\u002Flist","\u002Fdetail\u002F馬偕醫學院醫學營","\u002Fdetail\u002F26屆成功大學環境生態研習營","\u002Fdetail\u002F中興大學第16屆食品生技營-食八般武藝","\u002Fdetail\u002F亞洲大學物治營","\u002Fdetail\u002F世新大學2022第七屆公關營《PlayeRs脫罪玩家》"]})
