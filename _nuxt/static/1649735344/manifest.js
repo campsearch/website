@@ -1,1 +1,0 @@
-__NUXT_JSONP__("manifest.js", {routes:["\u002F","\u002Fabout","\u002Fdetail\u002Flist","\u002Fdetail\u002F雙橡｜Amazon企業策略營","\u002Fdetail\u002F2022Detour高中生設計人生寒假營隊","\u002Fdetail\u002F臺灣大學化學工程車營","\u002Fdetail\u002F高雄醫學大學藥學營","\u002Fdetail\u002F臺灣大學農化營","\u002Fdetail\u002F中興大學第16屆食品生技營-食八般武藝","\u002Fdetail\u002F東海大學生態營–【吃】的生態學"]})
