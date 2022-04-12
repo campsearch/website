@@ -1,1 +1,0 @@
-__NUXT_JSONP__("manifest.js", {routes:["\u002F","\u002Fabout","\u002Fdetail\u002Flist","\u002Fdetail\u002F世新大學2022第七屆公關營《PlayeRs脫罪玩家》","\u002Fdetail\u002F清大化工營","\u002Fdetail\u002F雲科大暑期電機營","\u002Fdetail\u002F國立臺北大學金融研習營","\u002Fdetail\u002FAIEF臺灣青少年領袖營","\u002Fdetail\u002F中正大學外文營Muggle’sMetamorphosis","\u002Fdetail\u002F陽明交通大學醫學營","\u002Fdetail\u002F佛光大學心理營隊"]})
