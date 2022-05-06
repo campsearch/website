@@ -27,6 +27,31 @@
                         class="px-4 mb-3"
                     ></v-autocomplete>
 
+                    <v-banner two-line>
+                        <v-avatar
+                            slot="icon"
+                            color="deep-purple accent-4"
+                            size="40"
+                        >
+                            <v-icon
+                                icon="mdi-thumb-up"
+                                color="white"
+                            >
+                                mdi-thumb-up
+                            </v-icon>
+                        </v-avatar>
+                        Web開發挑戰營
+                        學習如何架設網站建立你獨一無二的學習歷程！
+                        <template v-slot:actions>
+                            <v-btn
+                                onclick="window.open('https://camp.aplusplus.education')"
+                                text
+                                color="deep-purple accent-4"
+                            >
+                                了解詳情
+                            </v-btn>
+                        </template>
+                    </v-banner>
                     <v-data-table
                         :headers="headers"
                         :items="originData"
