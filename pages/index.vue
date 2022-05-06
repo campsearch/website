@@ -92,6 +92,22 @@
                 </v-card>
             </v-col>
         </v-row>
+        <v-snackbar
+            v-model="snackbar"
+        >
+            歡迎報名Web開發挑戰營<br/>
+            學習如何架設網站建立你獨一無二的學習歷程
+            <template v-slot:action="{ attrs }">
+                <v-btn
+                    v-bind="attrs"
+                    @click="snackbar = false;window.open('https://camp.aplusplus.education')"
+                    text
+                    color="pink"
+                >
+                    了解詳情
+                </v-btn>
+            </template>
+        </v-snackbar>
     </v-container>
 </template>
 
@@ -106,7 +122,8 @@ export default {
             search: '',
             tags: [],
             categories: [...new Set(originData.flatMap(r => r.tags))],
-            perPage: 500
+            perPage: 500,
+            snackbar: false
         }
     },
     computed: {
@@ -170,6 +187,9 @@ export default {
     },
     mounted() {
         this.perPage = 5
+        setTimeout(()=>{
+            this.snackbar = true
+        }, 30000)
     }
 }
 </script>
