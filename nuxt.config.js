@@ -18,6 +18,7 @@ export default {
             {hid: 'description', name: 'description', content: '快速搜尋、了解營隊價格、評價的系統'},
             {hid: 'og:title', name: 'og:title', content: '暑假營隊搜尋系統'},
             {hid: 'og:description', name: 'og:description', content: '快速搜尋、了解營隊價格、評價的系統'},
+            {hid: 'og:image', name: 'og:image', content: '/cover.png'},
             {hid: 'og:site_name', name: 'og:site_name', content: '營隊搜尋系統'},
             {hid: 'og:locale', name: 'og:locale', content: 'zh_TW'},
             {hid: 'apple-mobile-web-app-title', name: 'apple-mobile-web-app-title', content: '營隊搜尋'}
